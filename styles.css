@@ -1,0 +1,1469 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 588px;
+    margin: 0 auto;
+    background-color: #000000;
+    position: relative;
+}
+
+/* Header Section */
+.header {
+    padding: 10px 20px 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 548px;
+    max-width: 100%;
+}
+
+.logo-header {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-image-wrapper {
+    width: 548px;
+    max-width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* WE ARE PPF Section */
+.we-are-ppf {
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.main-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 25px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 548px;
+    max-width: 100%;
+    margin: 20px 0 20px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.we-are-ppf-content {
+    width: 548px;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 225px;
+}
+
+.sub-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-bottom: 0;
+    display: block;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-bottom: 0;
+    display: block;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    width: 547px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 29px;
+    position: relative;
+}
+
+.divider-line {
+    flex: 1;
+    height: 0;
+    position: relative;
+}
+
+.divider-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    background-image: url('images/line.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.divider-logo {
+    width: 26px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+/* PPF Films Section */
+.ppf-films-section {
+    padding: 0 20px;
+    margin-top: 24px;
+}
+
+.section-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 29px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
+    max-width: 548px;
+    flex-wrap: wrap;
+}
+
+.benefit-icon {
+    width: 26px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.benefit-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27.5px;
+    color: #ffffff;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Our Products Section */
+.our-products-section {
+    padding: 0 20px;
+    margin-top: 24px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-template-rows: repeat(7, fit-content(100%));
+    gap: 20px;
+    width: 548px;
+    max-width: 100%;
+    margin: 0;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 260px;
+    max-width: 100%;
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    position: absolute;
+    object-fit: contain;
+}
+
+/* Specific positioning for each product image */
+.product-card:nth-child(1) .product-image {
+    width: 197px;
+    height: 160px;
+    left: 29px;
+    top: 14px;
+}
+
+.product-card:nth-child(2) .product-image {
+    width: 240px;
+    height: 179px;
+    left: 12px;
+    top: 5px;
+}
+
+.product-card:nth-child(3) .product-image {
+    width: 236px;
+    height: 176.449px;
+    left: 12px;
+    top: 5px;
+}
+
+.product-card:nth-child(4) .product-image {
+    width: 183px;
+    height: 174px;
+    left: 40px;
+    top: 6px;
+}
+
+.product-card:nth-child(5) .product-image {
+    width: 161px;
+    height: 181px;
+    left: 52px;
+    top: 4.5px;
+}
+
+.product-card:nth-child(6) .product-image {
+    width: 242px;
+    height: 146px;
+    left: 11px;
+    top: 22px;
+}
+
+.product-card:nth-child(7) .product-image {
+    width: 190px;
+    height: 190px;
+    left: 26px;
+    top: 0;
+}
+
+.product-card:nth-child(8) .product-image {
+    width: 214px;
+    height: 160px;
+    left: 25px;
+    top: 15px;
+}
+
+.product-card:nth-child(9) .product-image {
+    width: 216px;
+    height: 160px;
+    left: 24px;
+    top: 15px;
+}
+
+.product-card:nth-child(10) .product-image {
+    width: 220px;
+    height: 160px;
+    left: 22px;
+    top: 15px;
+}
+
+.product-card:nth-child(11) .product-image {
+    width: 229px;
+    height: 160px;
+    left: 18px;
+    top: 15px;
+}
+
+.product-card:nth-child(12) .product-image {
+    width: 224px;
+    height: 160px;
+    left: 20px;
+    top: 15px;
+}
+
+.product-card:nth-child(13) .product-image {
+    width: 226px;
+    height: 160px;
+    left: 19px;
+    top: 15px;
+}
+
+.product-card:nth-child(14) .product-image {
+    width: 180px;
+    height: 160px;
+    left: 42px;
+    top: 15px;
+}
+
+/* Product Grid Positioning */
+.products-grid .product-card:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.products-grid .product-card:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.products-grid .product-card:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.products-grid .product-card:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.products-grid .product-card:nth-child(5) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.products-grid .product-card:nth-child(6) {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.products-grid .product-card:nth-child(7) {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.products-grid .product-card:nth-child(8) {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.products-grid .product-card:nth-child(9) {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.products-grid .product-card:nth-child(10) {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.products-grid .product-card:nth-child(11) {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.products-grid .product-card:nth-child(12) {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.products-grid .product-card:nth-child(13) {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.products-grid .product-card:nth-child(14) {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+/* Divider with Color Logo */
+.divider-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    width: 547px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.divider-line-color {
+    flex: 1;
+    height: 0;
+    position: relative;
+}
+
+.divider-line-color::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    background-image: url('images/line-6.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+.divider-line-color:last-child::before {
+    background-image: url('images/line-7.png');
+}
+
+.divider-logo-color {
+    width: 26px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+/* TPU Color Section */
+.tpu-color-section {
+    padding: 0 20px;
+    margin-top: 24px;
+}
+
+.tpu-color-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 548px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tpu-logo-wrapper {
+    width: 534px;
+    height: 134px;
+    margin-bottom: 0;
+}
+
+.tpu-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tpu-car-wrapper {
+    width: 100%;
+    aspect-ratio: 578 / 323;
+    position: relative;
+    overflow: hidden;
+}
+
+.tpu-car-image {
+    width: 100.23%;
+    height: 104.02%;
+    position: absolute;
+    left: -0.11%;
+    top: -4.02%;
+    object-fit: cover;
+}
+
+.tpu-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+    width: 548px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 23px;
+}
+
+.tpu-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
+    max-width: 548px;
+    flex-wrap: wrap;
+}
+
+.tpu-benefit-icon {
+    width: 26px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.tpu-benefit-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27.5px;
+    color: #ffffff;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    flex: 1;
+    min-width: 0;
+}
+
+.tpu-benefit-item:nth-child(5) .tpu-benefit-text {
+    max-width: 480px;
+}
+
+/* Mobile App Section */
+.mobile-app-section {
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+.mobile-app-content {
+    display: flex;
+    gap: 0;
+    width: 544px;
+    height: 399px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.phone-image-wrapper {
+    position: absolute;
+    left: 5.5px;
+    top: 0;
+    width: 201px;
+    height: 399px;
+}
+
+.phone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mobile-app-text {
+    position: absolute;
+    left: 298.5px;
+    top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 240px;
+}
+
+.mobile-app-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 22.92px;
+    line-height: 27.5px;
+    color: #ffffff;
+    text-align: center;
+    width: 240px;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.regular-weight {
+    font-weight: 400;
+}
+
+.mobile-app-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 22.92px;
+    line-height: 27.5px;
+    color: #ffffff;
+    text-align: center;
+    width: 224px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
+
+.mobile-app-description .regular-weight {
+    font-weight: 400;
+    display: block;
+}
+
+.app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30.24px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.app-button-link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    width: 194.745px;
+    height: 70.498px;
+}
+
+.app-button-link:hover {
+    opacity: 0.8;
+}
+
+.app-button-link:active {
+    opacity: 0.6;
+}
+
+.app-button {
+    width: 194.745px;
+    height: 70.498px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    object-fit: contain;
+    display: block;
+}
+
+/* PPF Cutting Software Section */
+.cutting-software-section {
+    padding: 0 20px;
+    margin-top: 24px;
+}
+
+.cutting-software-section .divider {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.cutting-software-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: center;
+    width: 548px;
+    max-width: 100%;
+    margin: 0 auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.cutting-software-heading .bold-weight {
+    font-weight: 700;
+}
+
+.cutting-software-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 7px 19px;
+    width: 548px;
+    max-width: 100%;
+    height: 355px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.cutting-software-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 22.92px;
+    line-height: 27.5px;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+.cutting-software-image-wrapper {
+    width: 505.645px;
+    height: 285px;
+    position: relative;
+}
+
+.cutting-software-image-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.cutting-software-image-link:hover {
+    opacity: 0.9;
+}
+
+.cutting-software-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* PPF Training Section */
+.training-section {
+    padding: 0 20px;
+    margin-top: 24px;
+}
+
+.training-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: center;
+    width: 545px;
+    max-width: 100%;
+    margin: 0 auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.training-subheading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: center;
+    width: 545px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.training-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 7px 19px;
+    width: 548px;
+    max-width: 100%;
+    height: 355px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.training-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 22.92px;
+    line-height: 27.5px;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+.training-image-wrapper {
+    width: 505.645px;
+    height: 285px;
+    position: relative;
+}
+
+.training-image-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.training-image-link:hover {
+    opacity: 0.9;
+}
+
+.training-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* QR Code Section */
+.qr-section {
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+.qr-content {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 349.268px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.qr-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 3px 8px;
+    width: 190px;
+}
+
+.qr-group-image {
+    width: 190px;
+    height: 120px;
+    display: block;
+    object-fit: contain;
+}
+
+.qr-code {
+    width: 151px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Footer Image */
+.footer-image-wrapper {
+    width: 548px;
+    max-width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Social Media Section */
+.social-media-section {
+    padding: 0 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 39px;
+    align-items: center;
+}
+
+.social-icon-link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon-link:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.social-icon-link:active {
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+
+.social-icon {
+    width: 70.6px;
+    height: 69.586px;
+    object-fit: contain;
+    display: block;
+}
+
+.social-icon-link:nth-child(2) .social-icon {
+    width: 70.6px;
+    height: 69.588px;
+}
+
+.social-icon-link:nth-child(3) .social-icon,
+.social-icon-link:nth-child(4) .social-icon {
+    width: 70.632px;
+    height: 69.57px;
+}
+
+/* Footer */
+.footer {
+    padding: 0 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 548px;
+    max-width: 100%;
+    height: 127px;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .header {
+        padding: 10px 10px 0;
+    }
+
+    .header-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .logo-header {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image-wrapper {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .we-are-ppf,
+    .ppf-films-section,
+    .our-products-section,
+    .tpu-color-section,
+    .mobile-app-section,
+    .cutting-software-section,
+    .training-section,
+    .social-media-section,
+    .footer {
+        padding: 0 10px;
+    }
+
+    .qr-section {
+        padding: 0 10px;
+        margin-top: 80px;
+    }
+
+    .main-heading,
+    .we-are-ppf-content,
+    .section-heading,
+    .cutting-software-heading,
+    .training-heading,
+    .training-subheading {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(24px, 5vw, 38px);
+        line-height: 1.2;
+    }
+
+    .main-heading {
+        margin: 20px 0;
+    }
+
+    .we-are-ppf-content {
+        height: auto;
+    }
+
+    .description,
+    .sub-heading {
+        font-size: clamp(14px, 3vw, 18px);
+        line-height: 1.4;
+    }
+
+    .benefit-text,
+    .tpu-benefit-text {
+        font-size: clamp(14px, 3vw, 18px);
+        line-height: 1.4;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .benefit-item,
+    .tpu-benefit-item {
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .benefit-icon,
+    .tpu-benefit-icon {
+        flex-shrink: 0;
+    }
+
+    .benefit-text,
+    .tpu-benefit-text {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .tpu-benefit-text {
+        margin-left: 0;
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .tpu-benefit-icon {
+        flex-shrink: 0;
+    }
+
+    .divider,
+    .divider-color {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        max-width: 100%;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        min-height: 150px;
+        margin: 0 auto;
+    }
+
+    .products-grid .product-card {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+        justify-self: center;
+    }
+
+    .product-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-image {
+        width: auto;
+        max-width: 90%;
+        height: auto;
+        max-height: 150px;
+        object-fit: contain;
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0;
+    }
+
+    /* Reset all specific positioning in responsive mode */
+    .product-card:nth-child(1) .product-image,
+    .product-card:nth-child(2) .product-image,
+    .product-card:nth-child(3) .product-image,
+    .product-card:nth-child(4) .product-image,
+    .product-card:nth-child(5) .product-image,
+    .product-card:nth-child(6) .product-image,
+    .product-card:nth-child(7) .product-image,
+    .product-card:nth-child(8) .product-image,
+    .product-card:nth-child(9) .product-image,
+    .product-card:nth-child(10) .product-image,
+    .product-card:nth-child(11) .product-image,
+    .product-card:nth-child(12) .product-image,
+    .product-card:nth-child(13) .product-image,
+    .product-card:nth-child(14) .product-image {
+        width: auto;
+        max-width: 90%;
+        height: auto;
+        max-height: 150px;
+        left: auto;
+        top: auto;
+        position: relative;
+    }
+
+    .tpu-color-content,
+    .tpu-benefits {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tpu-benefits {
+        align-items: center;
+    }
+
+    .tpu-logo-wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tpu-car-wrapper {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .mobile-app-content {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .phone-image-wrapper {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .phone-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-app-text {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .mobile-app-heading,
+    .mobile-app-description {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(16px, 4vw, 22.92px);
+    }
+
+    .app-buttons {
+        width: 100%;
+        max-width: 200px;
+        margin: 20px auto 0;
+    }
+
+    .app-button {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cutting-software-card,
+    .training-card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cutting-software-card {
+        min-height: 100%;
+    }
+
+    .cutting-software-image-wrapper,
+    .training-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        aspect-ratio: 16/9;
+        flex: 1;
+    }
+
+    .cutting-software-image,
+    .training-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .qr-content {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        gap: 30px;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .qr-text-wrapper {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .qr-group-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .qr-code {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 548/250;
+        margin-top: 80px;
+    }
+
+    .footer-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Ujednolicenie rozmiarów wszystkich ikon w media queries */
+    .social-icon-link:nth-child(2) .social-icon,
+    .social-icon-link:nth-child(3) .social-icon,
+    .social-icon-link:nth-child(4) .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .header,
+    .we-are-ppf,
+    .ppf-films-section,
+    .our-products-section,
+    .tpu-color-section,
+    .mobile-app-section,
+    .cutting-software-section,
+    .training-section,
+    .social-media-section,
+    .footer {
+        padding: 0 5px;
+    }
+
+    .qr-section {
+        padding: 0 5px;
+        margin-top: 80px;
+    }
+
+    .main-heading {
+        font-size: 24px;
+        letter-spacing: 1px;
+        padding: 0 10px;
+    }
+
+    .section-heading,
+    .cutting-software-heading,
+    .training-heading,
+    .training-subheading {
+        font-size: 24px;
+        line-height: 1.3;
+        padding: 0 10px;
+    }
+
+    .benefit-text,
+    .tpu-benefit-text,
+    .description {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .benefit-item {
+        gap: 10px;
+    }
+
+    .tpu-benefit-item {
+        gap: 10px;
+    }
+
+    .tpu-benefit-text {
+        margin: 0;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .product-card {
+        min-height: 120px;
+        max-width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-image {
+        width: auto;
+        max-width: 85%;
+        height: auto;
+        max-height: 120px;
+        object-fit: contain;
+        position: relative;
+        left: auto;
+        top: auto;
+    }
+
+    /* Reset all specific positioning in responsive mode for small screens */
+    .product-card:nth-child(1) .product-image,
+    .product-card:nth-child(2) .product-image,
+    .product-card:nth-child(3) .product-image,
+    .product-card:nth-child(4) .product-image,
+    .product-card:nth-child(5) .product-image,
+    .product-card:nth-child(6) .product-image,
+    .product-card:nth-child(7) .product-image,
+    .product-card:nth-child(8) .product-image,
+    .product-card:nth-child(9) .product-image,
+    .product-card:nth-child(10) .product-image,
+    .product-card:nth-child(11) .product-image,
+    .product-card:nth-child(12) .product-image,
+    .product-card:nth-child(13) .product-image,
+    .product-card:nth-child(14) .product-image {
+        width: auto;
+        max-width: 85%;
+        height: auto;
+        max-height: 120px;
+        left: auto;
+        top: auto;
+        position: relative;
+    }
+
+    .products-grid {
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .products-grid .product-card {
+        justify-self: center;
+    }
+
+    .mobile-app-heading,
+    .mobile-app-description {
+        font-size: 16px;
+    }
+
+    .app-buttons {
+        gap: 15px;
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .app-button {
+        width: 100%;
+    }
+
+    .social-icons {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Ujednolicenie rozmiarów wszystkich ikon w media queries dla małych ekranów */
+    .social-icon-link:nth-child(2) .social-icon,
+    .social-icon-link:nth-child(3) .social-icon,
+    .social-icon-link:nth-child(4) .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .divider,
+    .divider-color {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .divider-line,
+    .divider-line-color {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .cutting-software-card {
+        min-height: 100%;
+    }
+
+    .cutting-software-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        flex: 1;
+    }
+
+    .training-image-wrapper {
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+
+    .qr-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .qr-text-wrapper {
+        width: 100%;
+        max-width: 180px;
+    }
+}
